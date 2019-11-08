@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1>Gary登陆页面</h1>
+	<form action="/loginPage" method="post">
+	
+		用户名：
+		<input type="text" name="username">
+		<br>
+		
+		密码：
+		<input type="password" name="password">
+		<br>
+		
+		图片验证码：
+		<input type="text" name="imageCode">
+		<img src="/code/image">
+		<br>
+		
+		<input name="remember-me" type="checkbox" value="true">
+		记住我
+		
+		<input type="submit">
+	
+	</form>
+	
+	<br>
+	<hr>
+	<br>
+	<form action="">
+	
+		手机号：
+		<input type="text" name=“mobile” value="17689470428">
+		<br>
+		短信验证码：
+		<input type="text" name="smsCode">
+		<a href="/code/sms?mobile=17689470428">发送短信验证码</a>
+		
+		<input type = "submit">
+	</form>
+
+</body>
+</html>
